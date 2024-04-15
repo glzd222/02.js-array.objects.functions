@@ -31,10 +31,6 @@ for (let i = 1;
   }
 
 
-//   task7  0 - 100 arası tək ədədlərin və cüt ədədlərin cəmini tapın
-
-
-
 
 
 // task15  daxil edilən ədədin kvadratını return edən funksiya yazın
@@ -46,4 +42,14 @@ function square(numbe) {
 }
 
 console.log(square(numbe));
+
+// # product arrayindəki producların qiymətləri cəmini və ortalamasını tapın\
+
+let sumOfPrices = 0;
+for (let i = 0; i < products.length; i++) {
+  sumOfPrices += products[i].price;
+}
+
+console.log("SUM: ", sumOfPrices);
+console.log("AVERAGE: ", sumOfPrices / products.length);
 
